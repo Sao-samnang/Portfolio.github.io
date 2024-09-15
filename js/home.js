@@ -26,4 +26,8 @@ $(document).ready(function(){
     
     observer.observe(document.querySelector('.square-wrapper'));
     squares.forEach((element) => observer.observe(element));
+    // catch screen respone
+    // if (window.matchMedia('screen and (max-width: 410px)').matches) {
+    //   $(".nav-menu .brd-name").text("Portfolo🔥");
+    // }
 })

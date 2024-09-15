@@ -110,6 +110,17 @@ body {
     transform: translate3d(0px, 0px, -250px);
   }
 }
+.nav-menu .navbar-toggler{
+  padding: 3px 5px;
+  margin: 0;
+}
+.nav-menu .navbar-toggler:focus,
+.nav-menu .navbar-toggler:active,
+.nav-menu .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
 .nav-menu .brd-name {
   margin-left: 5px;
   font-weight: bold;
@@ -458,4 +469,25 @@ ul {
 .example-2 .icon-content a[data-social="telegram"] .filled,
 .example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
   background-color: #0088cc;
+}
+
+
+/* responsive */
+@media screen and (max-width: 410px) {
+  .main-container{
+    display: flex;
+  }
+  .nav-menu{
+    width: 90%;
+    transform: none;
+  }
+  .nav-menu .brd-name::before{
+    content: "Portfolio🔥";
+    visibility: visible;
+  }
+  .nav-menu .brd-name{
+    visibility: hidden;
+    width: 100px;
+  }
+
 }
