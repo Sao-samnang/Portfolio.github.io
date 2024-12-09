@@ -13,7 +13,7 @@ body {
 }
 /* loading */
 /* From Uiverse.io by Smit-Prajapati */ 
-.loading{
+/* .loading{
   position: fixed;
   top: 0;
   left: 0;
@@ -22,16 +22,16 @@ body {
   z-index: 9999;
   display: grid;
   place-items: center;
-}
+} */
 /* .............. */
 /* From Uiverse.io by barisdogansutcu */ 
-.loading svg {
+/* .loading svg {
   width: 3.25em;
   transform-origin: center;
   animation: rotate4 2s linear infinite;
- }
+ } */
  
- circle {
+ /* circle {
   fill: none;
   stroke: hsl(0, 0%, 100%);
   stroke-width: 2;
@@ -62,10 +62,10 @@ body {
    stroke-dashoffset: -125px;
   }
  }
- 
+  */
 /* end loading */
 /* // */
-.square {
+/* .square {
   border-radius: 8px;
   opacity: 0;
   transform: scale(1.2);
@@ -80,7 +80,7 @@ body {
 .square-transition {
   opacity: 1;
   transform: none;
-}
+} */
 
 /*  */
 .contain-body{
@@ -100,7 +100,8 @@ body {
   overflow: hidden;
   background-color: #f0f0f06a;
   margin: auto;
-  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
+  border-radius: 3px;
+  /* transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
     scale(0.9, 0.9);
   border-radius: 5px;
   box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
@@ -108,7 +109,7 @@ body {
 
   &:hover {
     transform: translate3d(0px, 0px, -250px);
-  }
+  } */
 }
 .nav-menu .navbar-toggler{
   padding: 3px 5px;
@@ -126,14 +127,21 @@ body {
   font-weight: bold;
 }
 .nav-menu .brd-img {
+  position: absolute;
+  top: 8px;
   width: 40px;
   height: 40px;
   border-radius: 40px;
   object-fit: cover;
 }
 nav .container-fluid > .menu {
-  justify-content: center;
+  justify-content: end;
   align-items: end;
+  margin-right: 20px;
+
+}
+nav .container-fluid > .menu a{
+  padding: 0px 10px 0px 10px;
 }
 /* .menu .navbar-nav{
     margin-right: -20%;
@@ -144,6 +152,7 @@ nav .container-fluid > .menu {
   align-items: center;
   width: 90%;
   height: auto;
+  margin-top: -15px;
   background-color: #f385c322;
   border-radius: 5px;
   overflow: hidden;
@@ -284,7 +293,7 @@ nav .container-fluid > .menu {
   width: 90%;
   max-width: 1536px;
   height: 34px;
-  margin: 20px auto;
+  margin: 30px auto;
   margin-inline: auto;
   border-radius: 5px;
   padding: 0px 10px;
@@ -473,6 +482,17 @@ ul {
 
 
 /* responsive */
+@media screen and (max-width: 1199px) {
+  .nav-menu .brd-name{
+    margin-left: 50px;
+  }
+  .nav-menu .menu{
+    margin-top: 10px;
+  }
+  nav .container-fluid > .menu a{
+    padding: 5px 0px 5px 0px;
+  }
+}
 @media screen and (max-width: 410px) {
   .main-container{
     display: flex;
@@ -481,6 +501,7 @@ ul {
     width: 90%;
     transform: none;
   }
+  
   .nav-menu .brd-name::before{
     content: "Portfolio🔥";
     visibility: visible;
