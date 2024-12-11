@@ -113,7 +113,7 @@ body {
     border: none;
 }
 .nav-menu .brd-name {
-  margin-left: 45px;
+  margin: 10px 45px 10px 0px;
   font-weight: bold;
 }
 .nav-menu .brd-img {
@@ -485,7 +485,7 @@ ul {
     margin-left: 10px;
   }
   .nav-menu .container-fluid .menu{
-    margin: 10px 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%;
   }
   .nav-menu .menu a{
@@ -495,7 +495,10 @@ ul {
     background-color: #00446b;
   }
   nav .container-fluid > .menu a{
-    padding: 5px 0px 5px 0px;
+    padding: 7px 0px 7px 10px;
+  }
+  nav .container-fluid > .menu a:hover{
+    color: #fff;
   }
 }
 @media screen and (max-width: 410px) {
