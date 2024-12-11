@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g stroke="%23FF832E" stroke-width="0.25" stroke-linejoin="round"><path fill="%23FF0000" d="m4 16-1 5 5-1 6-6-4-4-6 6z"></path><path fill="%23FF832E" d="M19 5a2.84 2.84 0 0 0-4 0l-3 3-1-1c-.55-.55-1.45-.55-2 0s-.55 1.45 0 2l1 1 4 4 1 1c.55.55 1.45.55 2 0s.55-1.45 0-2l-1-1 3-3c1.1-1.1 1.1-2.9 0-4Z"></path></g></svg>'),auto;
+  /* cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g stroke="%23FF832E" stroke-width="0.25" stroke-linejoin="round"><path fill="%23FF0000" d="m4 16-1 5 5-1 6-6-4-4-6 6z"></path><path fill="%23FF832E" d="M19 5a2.84 2.84 0 0 0-4 0l-3 3-1-1c-.55-.55-1.45-.55-2 0s-.55 1.45 0 2l1 1 4 4 1 1c.55.55 1.45.55 2 0s.55-1.45 0-2l-1-1 3-3c1.1-1.1 1.1-2.9 0-4Z"></path></g></svg>'),auto; */
 }
 body {
   width: 100%;
@@ -99,21 +99,11 @@ body {
   top: 20px;
   overflow: hidden;
   background-color: #f0f0f06a;
-  margin: auto;
+  margin: 0px;
   border-radius: 3px;
-  /* transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
-    scale(0.9, 0.9);
-  border-radius: 5px;
-  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
-  transition: 0.4s ease-in-out transform;
-
-  &:hover {
-    transform: translate3d(0px, 0px, -250px);
-  } */
 }
 .nav-menu .navbar-toggler{
   padding: 3px 5px;
-  margin: 0;
 }
 .nav-menu .navbar-toggler:focus,
 .nav-menu .navbar-toggler:active,
@@ -123,7 +113,7 @@ body {
     border: none;
 }
 .nav-menu .brd-name {
-  margin-left: 5px;
+  margin-left: 45px;
   font-weight: bold;
 }
 .nav-menu .brd-img {
@@ -138,14 +128,10 @@ nav .container-fluid > .menu {
   justify-content: end;
   align-items: end;
   margin-right: 20px;
-
 }
 nav .container-fluid > .menu a{
   padding: 0px 10px 0px 10px;
 }
-/* .menu .navbar-nav{
-    margin-right: -20%;
-} */
 .my-profile {
   display: flex;
   justify-content: center;
@@ -483,11 +469,30 @@ ul {
 
 /* responsive */
 @media screen and (max-width: 1199px) {
-  .nav-menu .brd-name{
-    margin-left: 50px;
+  .nav-menu .container-fluid{
+    padding: 0px;
   }
-  .nav-menu .menu{
-    margin-top: 10px;
+  .nav-menu .container-fluid .navbar-toggler{
+    margin-right: 10px;
+  }
+  .nav-menu .container-fluid .mypf{
+    padding-left: 10px;
+  }
+  .nav-menu .brd-name{
+    margin-left: 55px;
+  }
+  .nav-menu .brd-img{
+    margin-left: 10px;
+  }
+  .nav-menu .container-fluid .menu{
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  .nav-menu .menu a{
+    padding: 5px 0px 5px 0px;
+  }
+  .nav-menu .menu a:hover{
+    background-color: #00446b;
   }
   nav .container-fluid > .menu a{
     padding: 5px 0px 5px 0px;
